@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, black, #b30743, #0990f7, black);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, black, #b30743, #0990f7, black); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.4;
+    font-size: 1.1rem;
+    min-height: 100%;
+    max-width: 100vw;
+    scroll-padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    max-width: 100vw;
+}
+
+nav {
+    position: fixed;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-right: 40px;
+}
+
+
+.musegroup {
+    width: 600px;
+    float: right;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px 0 10px 10px;
+}
+
+
+.navlink {
+    display: block;
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    -webkit-transition: background-color .3s ease-out;
+    -moz-transition: background-color .3s ease-out;
+    -o-transition: background-color .3s ease-out;
+    transition: background-color .3s ease-out;
+}
+
+.navlink:hover {
+    background-color: rgb(25, 72, 158);
+    cursor: pointer;
+  }
+
+
+h1 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 3rem;
+}
+
+.spacedh1 {
+    margin-top: 50px;
+}
+
+#description {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+    margin: 20px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    margin: 40px 0 5px 0;
+    font-size: 1.5rem;
+}
+
+.matthead {
+    margin-top: 20px;
+}
+
+main {
+    width: 85vw;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+img {
+    width: 300px;
+}
+
+#whoismuse {
+    margin: 15px 0;
+}
+
+section {
+    margin: 30px 0;
+}
+
+ol, ul {
+    margin-left: 20px;
+}
+
+hr {
+    margin-bottom: 5px;
+}
+
+.mainhr {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#muselogo {
+    width: 60vw;
+    margin: 0 auto;
+    display: block;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 15px; /* Place the button at the bottom of the page */
+    right: 40px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(21, 21, 21, 0.842); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 100px; /* Rounded corners */
+    font-size: 1rem; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(25, 72, 158); /* Add a dark-grey background on hover */
+  }
+
+footer {
+    height: 40px;
+    background-color:#181818cc;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+footer p {
+    display: inline;
+    margin-left: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.fa-hand-point-up {
+    font-size: 20px;
+}
+
+.bandprofiles {
+    display: block;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 3.5fr;
+}
+
+.bandimg {
+    border-radius: 7px;
+    float: left;
+    margin-right: 30px;
+    object-fit: cover;
+    max-height: 225px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.bandmemberbox {
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.career {
+    padding-left: 20px;
+}
+
+.bandhead {
+    margin-top: 50px;
+}
+
+.albumtext {
+    font-size: 1.7rem;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+.albumimg {
+    width: auto;
+    min-height: 450px;
+    height: 40vw;
+    float: left;
+    margin-right: 40px;
+    transition: filter .2s ease-in-out;
+}
+
+
+.albumimg:hover {
+    filter: brightness(60%);
+}
+
+.album {
+    display: flex;
+    margin: 10px 0 40px 0;
+}
+
+.albumgrid {
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr);
+    margin: 0 10px;
+}
+
+.authorcred {
+    color: rgb(255, 0, 191);
+    transition: color .3s ease-out;
+    text-decoration: none;
+}
+
+.authorcred:hover {
+    color: white;
+}
+
+.authorcred2 {
+    color:rgb(225, 0, 255);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color .5s ease-out;
+}
+
+.authorcred2:hover {
+    color:rgb(0, 153, 255);
+    font-weight: 500;
+}
+
+.darkimg:hover {
+    filter: brightness(60%);
+}
+
+.darkimg {
+    transition: filter .2s ease-in-out;
+}

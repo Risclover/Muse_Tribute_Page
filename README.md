@@ -6,6 +6,7 @@ This is Version #2 of my Muse-themed page for the FCc Tribute project. Slightly 
 
 Version 1:
 
-![This is an image](Images/oldmuse.png)
+<img src="Images/oldmuse.png" style="width: 400px; height: auto">
+<img src="Images/newmuse.png" style="width: 400px; height: auto">
 
 

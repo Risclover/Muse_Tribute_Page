@@ -6,6 +6,6 @@ This is Version #2 of my Muse-themed page for the FCc Tribute project. Slightly 
 
 Version 1:
 
-![This is an image](./Image/oldmuse.png)
+![This is an image](../Image/oldmuse.png)
 
 

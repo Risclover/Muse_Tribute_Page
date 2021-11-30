@@ -152,7 +152,8 @@ hr {
 /* Image */
 .musegroup {
     border-radius: 10px;
-    width: 650px;
+    width: 80%;
+    max-width: 600px;
 }
 
 #img-caption {

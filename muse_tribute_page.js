@@ -1,4 +1,3 @@
-const thisYear = new Date().getFullYear();
 const mattsNewAge = document.querySelector('.mattage')
 const chrisNewAge = document.querySelector('.chrisage');
 const domNewAge = document.querySelector('.domage')

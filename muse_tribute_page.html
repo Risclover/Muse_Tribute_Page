@@ -20,6 +20,7 @@
     <title>A Tribute to Muse</title>
 </head>
 <body>
+<div id="main">
     <header>
         <nav>
             <ul class="navbar">
@@ -31,24 +32,24 @@
         </nav>
         <div id="hero">
         <img src="https://1000logos.net/wp-content/uploads/2020/02/Muse-Logo.jpg" id="muselogo" alt="Muse logo">
-        <p id="description">The world's greatest British rock band</p>
+        <p id="title">The world's greatest British rock band</p>
         </div>
     </header>
 
     <main>
         <section id="whoismuse">
+
             <h1>Who is Muse?</h1>
             <hr class="mainhr">
-            <div class="toppar">
-                <p>
-                    Muse is a British alternative rock band that made its way into the music scene in the early 1990's and hasn't left since. Muse only consists of three members, each talented in their own right. The band has delved into different sound experimentations over the years, dabbling in the sounds of space rock, progressive metal, electronic music, art rock, and rock opera, among others. Accompanied by lyrics largely of a dystopian nature, the band has found great success, winning numerous awards (including 4 Grammy Awards) and selling millions of albums across the board.
-                </p>
-            </div>
-            <div class="par">
+            <p id="tribute-info">
+                Muse is a British alternative rock band that made its way into the music scene in the early 1990's and hasn't left since. Muse only consists of three members, each talented in their own right. The band has delved into different sound experimentations over the years, dabbling in the sounds of space rock, progressive metal, electronic music, art rock, and rock opera, among others. Accompanied by lyrics largely of a dystopian nature, the band has found great success, winning numerous awards (including 4 Grammy Awards) and selling millions of albums across the board.
+            </p>
+            
             <h2>A band of many names</h2>
             <hr>
-            <div class="musegroupdiv">
-                <img src="./Images/muse-press-photo-2018-wbr-jeff-forney.jpg" class="musegroup">
+            <div class="musegroupdiv" id="img-div">
+                <img src="./Images/muse-press-photo-2018-wbr-jeff-forney.jpg" class="musegroup" id="image">
+                <p id="img-caption">This is Muse!</p>
             </div>
             <p>
                 Before it was known as Muse, the band's name changed several times. <strong>Dominic Howard</strong> created <strong>Carnage Mayhem</strong>, and after <strong>Matt Bellamy</strong> auditioned for them and became their songwriter and lead singer in 1992, the band's name was changed to <strong>Gothic Plague</strong>.
@@ -59,7 +60,6 @@
             <p>
                 In 1994, Rocket Baby Dolls participated in a local battle of the bands. They smashed their equipment during their performance as a statement and protest. Thinking that had certainly disqualified them, they were surprised to find that not only were they not disqualified, but they had won the whole thing. This was the event that made the three of them take the band seriously. They quit their jobs, moved away, and renamed the band one last time, deciding to call it <strong>Muse</strong>.
             </p>
-            </div>
             <h2>Promising beginnings</h2>
             <hr>
             <p>
@@ -406,7 +406,7 @@
             <h1 class="spacedh1">More Information</h1>
             <hr class="mainhr">
             <div>
-                <p>To read more about the fabulous eargasm that is Muse, visit their <a href="https://en.wikipedia.org/wiki/Muse_(band)" target="_blank" class="authorcred2">Wikipedia page!</a></p>
+                <p>To read more about the fabulous eargasm that is Muse, visit their <a href="https://en.wikipedia.org/wiki/Muse_(band)" target="_blank" class="authorcred2" id="tribute-link">Wikipedia page!</a></p>
             </div>
         </section>
 
@@ -415,6 +415,8 @@
         <p>This FCC project is by Sara Dunlop (aka <a href="https://www.github.com/Risclover" class="authorcred" target="_blank">Risclover</a>)</p>
         <a href="#" onclick="topFunction()" id="myBtn" title="Go to top"><i class="far fa-hand-point-up"></i></a>
     </footer>
+</div>
 </body>
 <script src="muse_tribute_page.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>

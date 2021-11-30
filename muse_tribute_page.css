@@ -94,7 +94,7 @@ nav {
     justify-content: center;
 }
 
-#description {
+#title {
     color: white;
     text-align: center;
     font-family: 'Dancing Script', cursive;
@@ -153,6 +153,11 @@ hr {
 .musegroup {
     border-radius: 10px;
     width: 650px;
+}
+
+#img-caption {
+    text-align: center;
+    font-style: italic;
 }
 
 
@@ -354,7 +359,7 @@ footer a {
     }
     
     
-    #description {
+    #title {
         font-size: 2.5rem;
     }
     
@@ -444,12 +449,13 @@ footer a {
     }
 
     .musegroup {
-        margin: 30px;
+        margin: 30px 30px 15px 30px;
     }
 
     .musegroupdiv {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         margin: 0 auto;
     }
@@ -460,7 +466,7 @@ footer a {
         max-width: 65vw;
     }
 
-    #description {
+    #title {
         font-size: 2.5rem;
     }
     
@@ -518,7 +524,7 @@ footer a {
         align-items: center;
     }
 
-    #description {
+    #title {
         font-size: 6vw;
     }
 

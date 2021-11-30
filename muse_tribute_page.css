@@ -1,3 +1,5 @@
+/* General */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,29 +11,40 @@ body, html {
     background: linear-gradient(to top, black, #b30743, #0990f7, black); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Noto Sans', sans-serif;
     line-height: 1.4;
-    font-size: 1.1rem;
     min-height: 100%;
     max-width: 100vw;
     scroll-padding-top: 70px;
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
+    font-size: 1.1rem;
 }
 
 p {
     margin-bottom: 20px;
 }
 
-#hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+h3 {
+    margin: 10px 0;
 }
+
+ul {
+    margin-left: 30px;
+}
+
+
+/* Header */
 
 header {
     max-width: 100vw;
+}
+
+
+
+/* Nav */
+
+.navbar {
+    list-style-type: none;
 }
 
 nav {
@@ -43,31 +56,12 @@ nav {
     z-index: 2;
 }
 
-.navbar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-    padding-right: 40px;
-}
-
-
-.musegroup {
-    width: 600px;
-    float: right;
-    text-align: center;
-    border-radius: 10px;
-    margin: 10px 0 10px 10px;
-}
-
-
 .navlink {
     display: block;
     font-size: 1.5rem;
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
     text-decoration: none;
-    padding: 20px;
     -webkit-transition: background-color .3s ease-out;
     -moz-transition: background-color .3s ease-out;
     -o-transition: background-color .3s ease-out;
@@ -77,35 +71,33 @@ nav {
 .navlink:hover {
     background-color: rgb(25, 72, 158);
     cursor: pointer;
-  }
-
-
-h1 {
-    font-family: 'Dancing Script', sans-serif;
-    font-size: 3rem;
 }
 
-.spacedh1 {
-    margin-top: 50px;
+
+/* Logo/description */
+#muselogo {
+    margin: 0 auto;
+    display: block;
+    max-width: 600px;
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #description {
     color: white;
     text-align: center;
-    font-size: 2.5rem;
     font-family: 'Dancing Script', cursive;
     margin: 20px;
 }
 
-h2 {
-    font-family: 'Raleway', sans-serif;
-    margin: 40px 0 5px 0;
-    font-size: 1.5rem;
-}
 
-.matthead {
-    margin-top: 20px;
-}
+/* Main */
 
 main {
     width: 85vw;
@@ -116,20 +108,19 @@ main {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-img {
-    width: 300px;
-}
 
-#whoismuse {
-    margin: 15px 0;
-}
+/* Sections */
 
 section {
     margin: 30px 0;
 }
 
-ol, ul {
-    margin-left: 20px;
+h1 {
+    font-family: 'Dancing Script', sans-serif;
+}
+
+.spacedh1 {
+    margin-top: 50px;
 }
 
 hr {
@@ -141,11 +132,181 @@ hr {
     margin-bottom: 10px;
 }
 
-#muselogo {
-    width: 60vw;
-    margin: 0 auto;
+
+/* Sections - Who is Muse? */
+
+#whoismuse {
+    margin: 15px 0;
+}
+
+.facts {
+    margin-top: 50px;
+}
+
+
+/* Image */
+.musegroup {
+    border-radius: 10px;
+    width: 600px;
+}
+
+
+/* Sections - Band Members */ 
+
+.matthead {
+    margin-top: 20px;
+}
+
+.bandprofiles {
     display: block;
 }
+
+.container {
+    display: flex;
+}
+
+.bandtext {
+    display: flex;
+}
+
+.bandimg {
+    border-radius: 7px;
+    float: left;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.bandmemberbox {
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.career {
+    margin-left: 30px;
+}
+
+.personal {
+    margin-bottom: 20px;
+}
+
+
+.bandhead {
+    margin-top: 50px;
+}
+
+
+/* Discography */
+.albumtext {
+    font-size: 1.1rem
+}
+
+ol {
+    font-size: 1rem;
+    margin-left: 30px;
+    display: none;
+}
+
+ol .shown {
+    display:contents;
+}
+
+.album {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 20px 1vw;
+}
+
+.albumgrid {
+    display: inline-flex;
+    flex-wrap: wrap;
+}    
+
+.albumhr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+.showtracks {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    border: none;
+    text-decoration: underline;
+    text-align: left;
+    align-self: flex-start;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: color .3s ease-in-out;
+    color:rgb(234, 19, 245);
+}
+
+.showtracks:hover {
+    color:rgb(0, 153, 255);
+}
+
+.albumimg {
+    transition: filter .2s ease-in-out;
+    width: 100%;
+    height: auto;
+}
+
+.albumimg:hover {
+    filter: brightness(60%);
+}
+
+
+/* Footer */
+
+footer {
+    height: 40px;
+    background-color:#181818cc;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+footer p {
+    display: inline;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.authorcred {
+    color: rgb(0, 153, 255);
+    transition: color .3s ease-out;
+    text-decoration: none;
+}
+
+.authorcred:hover {
+    color:rgb(234, 19, 245);
+}
+
+
+.authorcred2 {
+    color:rgb(225, 0, 255);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+}
+
+.authorcred2:hover {
+    color:rgb(0, 153, 255);
+    font-weight: 500;
+}
+
+
+/* To Top button */
 
 #myBtn {
     display: none; /* Hidden by default */
@@ -161,129 +322,234 @@ hr {
     padding: 15px; /* Some padding */
     border-radius: 100px; /* Rounded corners */
     font-size: 1rem; /* Increase font size */
-  }
+}
   
-  #myBtn:hover {
+#myBtn:hover {
     background-color: rgb(25, 72, 158); /* Add a dark-grey background on hover */
-  }
-
-footer {
-    height: 40px;
-    background-color:#181818cc;
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding: 20px 0 10px 0;
-}
-
-footer p {
-    display: inline;
-    margin-left: 30px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    font-weight: 300;
-}
-
-footer a {
-    text-decoration: none;
 }
 
 .fa-hand-point-up {
     font-size: 20px;
 }
 
-.bandprofiles {
-    display: block;
+
+@media (min-width: 1585px) {  
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        padding-right: 40px;
+    }
+    
+    .navlink {
+        display: block;
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    
+    #muselogo {
+        width: 60vw;
+    }
+    
+    #description {
+        font-size: 2.5rem;
+    }
+    
+    h1 {
+        font-size: 4rem;
+    }
+
+    .musegroup {
+        float: right;
+        width: 600px;
+        margin: 10px;
+    }
+    
+    .bandimg {
+        margin-right: 30px;
+        height: 20vw;
+        max-height: 400px;
+    }
+
+    .personal {
+        margin-left: 10px;
+    }
+    
+    .albumimg {
+        width: 18vw;
+        min-width: 300px;
+    }
+
+    .album {
+        max-width: 18vw;
+    }
+
+    .albumgrid {
+        justify-content: space-evenly;
+    }
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 2.5fr 3.5fr;
+@media  (min-width: 715px) and (max-width: 1584px) {
+    
+    h1 {
+        font-size: 4rem;
+    }
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        padding-right: 40px;
+    }
+    
+    .navlink {
+        display: block;
+        font-size: 1.4rem;
+        padding: 20px;
+    }
+
+    .bandimg {
+        width: 20vw;
+        height: 30vw;
+        min-width: 225px;
+        min-height: 350px;
+    }
+
+    .container {
+        min-width: 80vw;
+    }
+    .personal {
+        margin-left: 30px;
+    }
+
+    .albumimg {
+        width: 40vw;
+        min-width: 40vw;
+    }
+
+    .albumgrid {
+        justify-content: space-evenly;
+    }
+
+    .album {
+        max-width: 40vw;
+        min-width: 40vw;
+    }
+
+    .musegroup {
+        margin: 30px;
+    }
+
+    .musegroupdiv {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bandtext {
+        display: flex;
+        flex-direction: column;
+        max-width: 65vw;
+    }
+
+    #description {
+        font-size: 2.5rem;
+    }
+    
 }
 
-.bandimg {
-    border-radius: 7px;
-    float: left;
-    margin-right: 30px;
-    object-fit: cover;
-    max-height: 225px;
-    width: auto;
-    margin-top: 10px;
-}
+@media (max-width: 714px) and (min-width: 1px) {
+    main {
+        max-width: 85vw;
+        padding: 10px;
+    }
 
-.bandmemberbox {
-    height: auto;
-    margin-bottom: 10px;
-}
+    .bandimg {
+        margin-bottom: 20px;
+    }
 
-.career {
-    padding-left: 20px;
-}
+    p {
+        font-size: .9rem;
+    }
 
-.bandhead {
-    margin-top: 50px;
-}
+    ul {
+        margin-left: 20px;
+        font-size: .8rem;
+    }
 
-.albumtext {
-    font-size: 1.7rem;
-}
+    ol {
+        font-size: .8rem;
+    }
 
-h3 {
-    margin: 10px 0;
-}
+    h1 {
+        font-size: 2rem;
+    }
 
-.albumimg {
-    width: auto;
-    min-height: 450px;
-    height: 40vw;
-    float: left;
-    margin-right: 40px;
-    transition: filter .2s ease-in-out;
-}
+    h2 {
+        font-size: 1.4rem;
+    }
 
+    .albumgrid {
+        justify-content: center;
+    }
 
-.albumimg:hover {
-    filter: brightness(60%);
-}
+    .albumimg {
+        margin: 0 auto;
+        width: 80vw;
+        min-width: 250px;
+    }
 
-.album {
-    display: flex;
-    margin: 10px 0 40px 0;
-}
+    .album {
+        max-width: 80vw;
+    }
 
-.albumgrid {
-    display: grid;
-    grid-template-columns: repeat(1fr 1fr);
-    margin: 0 10px;
-}
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
 
-.authorcred {
-    color: rgb(255, 0, 191);
-    transition: color .3s ease-out;
-    text-decoration: none;
-}
+    #description {
+        font-size: 6vw;
+    }
 
-.authorcred:hover {
-    color: white;
-}
+    .bandtext {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.authorcred2 {
-    color:rgb(225, 0, 255);
-    font-weight: 500;
-    text-decoration: none;
-    transition: color .5s ease-out;
-}
+    .career {
+        margin: 0;
+    }
 
-.authorcred2:hover {
-    color:rgb(0, 153, 255);
-    font-weight: 500;
-}
+    .musegroup {
+        width: 100%;
+        margin: 15px 0;
+    }
 
-.darkimg:hover {
-    filter: brightness(60%);
-}
+    #muselogo {
+        width: 80%;
+    }
 
-.darkimg {
-    transition: filter .2s ease-in-out;
+    #hero {
+        min-height: 60vh;
+    }
+
+    .navbar {
+        display: flex;
+        text-align: center;
+    }
+
+    .navlink {
+        margin: 0 auto;
+        display: block;
+        font-size: 3.5vw;
+        padding: 20px 3vw;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
 }

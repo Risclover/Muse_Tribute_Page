@@ -9,7 +9,7 @@ body, html {
     background: #16222A;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, black, #b30743, #0990f7, black);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, black, #b30743, #0990f7, black); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     min-height: 100%;
     max-width: 100vw;
@@ -21,7 +21,7 @@ body, html {
 }
 
 p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -32,6 +32,9 @@ ul {
     margin-left: 30px;
 }
 
+h2 {
+    margin-top: 30px;
+}
 
 /* Header */
 
@@ -152,8 +155,16 @@ hr {
 /* Image */
 .musegroup {
     border-radius: 10px;
-    width: 80%;
-    max-width: 600px;
+    width: 70%;
+    margin: 10px auto 5px auto;
+    max-width: 400px;
+}
+
+.musegroupdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px auto 0 auto;
 }
 
 #img-caption {
@@ -368,10 +379,13 @@ footer a {
         font-size: 4rem;
     }
 
-    .musegroup {
+    .musegroupdiv {
         float: right;
+        margin-left: 20px;
+    }
+
+    .musegroup {
         width: 600px;
-        margin: 10px;
     }
     
     .bandimg {
@@ -449,10 +463,6 @@ footer a {
         min-width: 40vw;
     }
 
-    .musegroup {
-        margin: 30px 30px 15px 30px;
-    }
-
     .musegroupdiv {
         display: flex;
         flex-direction: column;
@@ -498,7 +508,7 @@ footer a {
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.3rem;
     }
 
     h2 {
@@ -540,7 +550,7 @@ footer a {
 
     .musegroup {
         width: 100%;
-        margin: 15px 0;
+        max-width: 350px;
     }
 
     #muselogo {

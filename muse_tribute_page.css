@@ -47,6 +47,7 @@ header {
 /* Nav */
 
 .navbar {
+    max-width: 1550px;
     list-style-type: none;
 }
 
@@ -76,6 +77,10 @@ nav {
     transition: background-color .3s ease-out;
 }
 
+nav a {
+    padding: 10px;
+}
+
 .navlink:hover {
     background-color: rgb(25, 72, 158);
     cursor: pointer;
@@ -86,7 +91,8 @@ nav {
 #muselogo {
     margin: 0 auto;
     display: block;
-    width: 60vw;
+    width: 60%;
+    max-width: 1000px;
 }
 
 #hero {
@@ -108,11 +114,12 @@ nav {
 /* Main */
 
 main {
+    max-width: 1550px;
     width: 85vw;
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
@@ -219,7 +226,7 @@ hr {
 
 /* Discography */
 .albumtext {
-    font-size: 1.1rem
+    font-size: 1rem;
 }
 
 ol {
@@ -356,23 +363,28 @@ footer a {
 
 
 @media (min-width: 1585px) {  
+    #muselogo {
+        width: 1000px;
+    }
+
+
     .navbar {
         display: flex;
-        justify-content: flex-end;
         align-items: center;
+        justify-content: space-evenly;
         list-style: none;
-        padding-right: 40px;
+        margin: 0 auto;
     }
     
     .navlink {
         display: block;
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding: 20px;
     }
     
     
     #title {
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
     
     h1 {
@@ -401,10 +413,13 @@ footer a {
     .albumimg {
         width: 18vw;
         min-width: 300px;
+        max-width: 330px;
     }
 
     .album {
-        max-width: 18vw;
+        width: 18vw;
+        min-width: 300px;
+        max-width: 330px;
     }
 
     .albumgrid {
@@ -412,7 +427,7 @@ footer a {
     }
 
     .albumtext {
-        font-size: 1vw;
+        font-size: .9rem;
     }
 }
 
@@ -463,6 +478,10 @@ footer a {
         min-width: 40vw;
     }
 
+    .albumtext {
+        font-size: 1rem;
+    }
+
     .musegroupdiv {
         display: flex;
         flex-direction: column;
@@ -480,13 +499,17 @@ footer a {
     #title {
         font-size: 2.5rem;
     }
+
+    #muselogo {
+        min-width: 600px;
+    }
     
 }
 
 @media (max-width: 714px) and (min-width: 1px) {
     main {
         max-width: 85vw;
-        padding: 10px;
+        padding: 20px;
     }
 
     .bandimg {
@@ -555,6 +578,7 @@ footer a {
 
     #muselogo {
         width: 80%;
+        
     }
 
     #hero {
@@ -571,7 +595,7 @@ footer a {
         margin: 0 auto;
         display: block;
         font-size: 4vw;
-        padding: 20px 0;
+        padding: 15px 5px;
         text-align: center;
     }
 
@@ -582,6 +606,6 @@ footer a {
 
 @media (max-width: 834px) and (min-width: 715px) {
     .albumtext {
-        font-size: 2.3vw;
+        font-size: 2.2vw;
     }
 }
